@@ -5,7 +5,7 @@ import json
 def translate():
     parola = toTranslate.get()
 
-    payload = {'from' : 'it', 
+    payload = {'from' : 'eng', 
            'dest' : 'eng', 
            'format' : 'json', 
            'phrase' : parola, 
