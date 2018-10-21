@@ -12,7 +12,7 @@ payload = {'from' : 'it',
 response = requests.get('https://glosbe.com/gapi/translate', params=payload)
 filejson = response.json()
 
-
+toPrint = ""
 for i in range(0,5):
     try:
         element = filejson['tuc'][i]
@@ -24,7 +24,7 @@ for i in range(0,5):
                 meaning = elem['text']
                 trovato = True
             
-        print(element['phrase']['text'] + '\t\t->\t\t' + meaning)
+        toPrint += element['phrase']['text'] + ':\t' + meaning + '\n'
     except:
         pass
 
