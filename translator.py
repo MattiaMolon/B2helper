@@ -1,8 +1,8 @@
 import requests
 
-class translator:
+class Translator:
 
-    def __init__(self, sourceLanguage = 'eng', targetLanguage = 'eng'):
+    def __init__(self, sourceLanguage = 'it', targetLanguage = 'en'):
         self.sourceL = sourceLanguage
         self.targetL = targetLanguage
         self.url = 'https://glosbe.com/gapi/translate'
